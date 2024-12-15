@@ -57,7 +57,7 @@ jobs:
           sudo mkdir armbian-msm8916
           sudo mkdir temp
           sudo dd if=/dev/zero of=temp.img bs=1M count=5000
-          sudo dd if=/dev/zero of=armbian-msm8916.img bs=1M count=4500
+          sudo dd if=/dev/zero of=armbian-msm8916.img bs=1M count=1800
           sudo mkfs.btrfs armbian-msm8916.img
           sudo mkfs.btrfs temp.img
           sudo mount -o compress=zstd:15 temp.img temp
